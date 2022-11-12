@@ -1,0 +1,9 @@
+:root {
+    --logo-colour: #29ABE4;
+    font-size: 16px;
+}
+*{max-width: 100%;}
+
+.logo {
+    max-width: 15px;
+}
