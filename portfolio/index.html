@@ -15,46 +15,91 @@
             <img class="logo" src="/multimedia/oliviac-low-res-logo-black-on-transparent-background.png" alt="Logo with black open circle and Olivia C in centre"
             title="OliviaC logo">
         </a>
+        <a href="# AboutMe">About Me</a>
     </nav>
-    <main>
-        <header>
+    <header>
             <!--have background image, optimised for different resolutions-->
+            <figure> 
+                <figcaption></figcaption>
+            </figure>
             <h1>OLIVIA CARROLL</h1> 
-            Junior Full Stack Developer
-        </header>
-        <div>
-            <h2>About Me</h2>
+            <h2>Junior Full Stack Developer</h2>
+    </header>
+    <main>
+        <section>
+            <h3 id="AboutMe">About Me</h3>
             <p>
                 Hi! I'm Olivia. I'm currently based in Barcelona city centre, studying for a Biomedicine degree and I've just started out on my journey to being a developer.
+            </p>    
+            <p>
                 My longterm goal is to create beautifully crafted software and applications that make healthcare accessible to all and take us into the digital era of personalised medicine.
-                For now, I'm learning all of the skills I can to get there
+                For now, I'm learning all of the skills I can to get there!
             </p>
-        </div>
+        </section>
         <hr>        
-        <div>
+        <section>
             <h2>Skills</h2>
             Python
             R
             Html 
             css 
             Javascript
-        </div> 
+        </section> 
         <hr>
-        <form action="">
-            Contact form
+        <h2>Contact Form</h2>
+        <form>
+            <div>
+                <label for="name">Name</label>
+                <input id="name" type="text">
+            </div>
+            <div>
+                <label for="surname">Surname</label>
+                <input id="surname" type="text">
+            </div>
+            <div>
+                <label for="phone">Telephone</label>
+                <input id="phone" type="tel" name="Phone" id="">
+            </div>
+            <div>
+                <label for="question">How did you hear about me?</label>
+                <button>University</button>
+                <button>Keepcoding kick-off</button>
+                <button>College</button>
+                <button>GitHub</button>
+            </div>
+            <div>
+                <label for="Github tag">Let's connect! What is your GitHub tag:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="Description">Description (max 180 characters)</label>
+                <input type="text" maxlength="180 charac" placeholder="Write your question here">
+            </div>
+            <div>
+                <input type="submite" value="Send">
+                <button type="submit">Submit</button>
+            </div>
         </form>
     </main>
     <footer class="footer"> 
         <!-- links to social networks with logos, use target _blank-->
-        <a href="#">
-            <img class="logo" src="/multimedia/oliviac-low-res-logo-black-on-transparent-background.png" alt="OliviaC logo">
-        </a>
-        <a href="https://github.com/OliviaCarroll">
-            <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/olivia-carroll-910a55170">
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
+        <ul>
+            <li>
+                <a href="#">
+                <img class="logo" src="/multimedia/oliviac-low-res-logo-black-on-transparent-background.png" alt="OliviaC logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/OliviaCarroll" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/olivia-carroll-910a55170" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
         <em>Olivia Carroll</em>
     </footer>
 </body>

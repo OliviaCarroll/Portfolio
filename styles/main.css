@@ -5,5 +5,5 @@
 *{max-width: 100%;}
 
 .logo {
-    max-width: 15px;
+    max-width: 15px; /* TODO make responsive */
 }
