@@ -156,18 +156,22 @@ nav.navbar, footer.main-footer {
 
 .circle.per-5 {
     background-image: conic-gradient(var(--dark-turquoise) 5%, var(--font-colour) 0);
+    animation: progress5 2s ease-in-out;
 }
 
 .circle.per-25 {
     background-image: conic-gradient(var(--dark-turquoise) 25%, var(--font-colour) 0);
+    animation: progress25 2s ease-in-out;
 }
 
 .circle.per-50 {
     background-image: conic-gradient(var(--dark-turquoise) 50%, var(--font-colour) 0);
+    animation: progress50 2s ease-in-out;
 }
 
 .circle.per-75 {
     background-image: conic-gradient(var(--dark-turquoise) 75%, var(--font-colour) 0);
+    animation: progress75 2s ease-in-out;
 }
 
 .circle .inner {
@@ -203,8 +207,38 @@ nav.navbar, footer.main-footer {
 
 }
 
+@keyframes progress5 {
+    from {
+        background-image: conic-gradient(var(--dark-turquoise) 0)
+    }
+    to {
+        background-image: conic-gradient(var(--dark-turquoise) 5%)
+    }
+}
 
-@keyframes progress {
-    from {}
-    to {}
+@keyframes progress25 {
+    from {
+        background-image: conic-gradient(var(--dark-turquoise) 0)
+    }
+    to {
+        background-image: conic-gradient(var(--dark-turquoise) 25%)
+    }
+}
+
+@keyframes progress50 {
+    from {
+        background-image: conic-gradient(var(--dark-turquoise) 0)
+    }
+    to {
+        background-image: conic-gradient(var(--dark-turquoise) 50%)
+    }
+}
+
+@keyframes progress75 {
+    from {
+        background-image: conic-gradient(var(--dark-turquoise) 0)
+    }
+    to {
+        background-image: conic-gradient(var(--dark-turquoise) 75%)
+    }
 }
