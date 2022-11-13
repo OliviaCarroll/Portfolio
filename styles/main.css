@@ -25,11 +25,10 @@ body {
 
 .card {
     background-color: rgba(255, 255, 255, 0.726);
-    margin: 10px;
+    margin: 5px;
     border-radius: 15px;
     padding: 10px;
     text-align: center;
-    max-width: 1024px;
 }
 
 .link {
@@ -87,19 +86,125 @@ nav.navbar, footer.main-footer {
     margin-left: 10px;
 }
 
+.contact-form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-form .form-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+}
+
 .name-footer img.logo {
-    width: 30%;
+    width: 15%;
     max-width: 110px;
+    margin: 5px 0 5px 15px;
+    padding: 2px;
+}
+
+.name-footer {
+    text-align: center;
+    display: flex;
+    font-size: 0.8rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-footer{
+    padding: 5px 5px;
+    text-align: center;
 }
 
 @media screen and (min-width: 576px) {
     .navlinks {
         display: flex;
         justify-content: space-between;
+        transition: color 2s linear;
     }
 
     .navbar .navlinks .link:hover {
         color: darkgrey;
-        transition: color 0.3s linear;
     }
+}
+
+/*progress circles styles*/
+.progress-circles {
+    display: flex;
+    min-height: 10vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem;
+    border-radius: 50%;
+    background: white;
+    overflow: hidden;
+    border: 1px solid grey;
+}
+
+.circle.per-5 {
+    background-image: conic-gradient(var(--dark-turquoise) 5%, var(--font-colour) 0);
+}
+
+.circle.per-25 {
+    background-image: conic-gradient(var(--dark-turquoise) 25%, var(--font-colour) 0);
+}
+
+.circle.per-50 {
+    background-image: conic-gradient(var(--dark-turquoise) 50%, var(--font-colour) 0);
+}
+
+.circle.per-75 {
+    background-image: conic-gradient(var(--dark-turquoise) 75%, var(--font-colour) 0);
+}
+
+.circle .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85px;
+    height: 85px;
+    background: grey;
+    border-radius: 50%;
+    font-size: 1em;
+    font-weight: 300;
+    color: #DAFAED;
+}
+
+@media screen and (min-width: 576px){
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 425px;
+    }
+
+}
+
+
+@keyframes progress {
+    from {}
+    to {}
 }

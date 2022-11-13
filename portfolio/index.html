@@ -38,8 +38,8 @@
         </div>    
     </header>
 
-    <main>
-        <section>
+    <main class="main-content">
+        <section class="blog-content">
             <h3 class="title" id="AboutMe">About Me</h3>
             <div class="card">
             <p class="about-content">
@@ -56,36 +56,64 @@
 
         <hr>     
         
-        <section>
+        <section class="blog-content">
             <h2 class="title" id="skills">Skills</h2>
             <div class="card">
-                Python
-                R
-                html 
-                css 
-                Javascript
+                <div class="progress-circles">
+                    <div class="circle per-5">
+                        <div class="inner">
+                            Javascript
+                        </div>
+                    </div>
+                    <div class="circle per-5">
+                        <div class="inner">
+                            Typescript
+                        </div>
+                    </div>
+                    <div class="circle per-50">
+                        <div class="inner">
+                            Python
+                        </div>
+                    </div>
+                    <div class="circle per-75">
+                        <div class="inner">
+                            html
+                        </div>
+                    </div>
+                    <div class="circle per-50">
+                        <div class="inner">
+                            css
+                        </div>
+                    </div>
+                    <div class="circle per-25">
+                        <div class="inner">
+                            R
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </section> 
         <hr>
 
         <h2 class="title" id="ContactForm">Contact Form</h2>
-        <form class="card" action="contact-form.html" method="post">
-            <div>
-                <label for="name">Name</label>
+        <form class="card blog-content contact-form" action="contact-form.html" method="post">
+            <div class="form-item">
+                <label for="name">Name:</label>
                 <input required id="name" name="name type="text">
             </div>
             
-            <div>
-                <label for="surname">Surname</label>
+            <div class="form-item">
+                <label for="surname">Surname:</label>
                 <input required id="surname" name="surname" type="text">
             </div>
             
-            <div>
-                <label for="phone">Telephone </label>
+            <div class="form-item">
+                <label for="phone">Telephone:</label>
                 <input required id="phone" name="phone" type="tel" placeholder="000000000" pattern="[0-9]+">
             </div>
             
-            <fieldset>
+            <fieldset class="form-item">
                 <legend>How did you hear about me?</legend>
                 
                 <label for="University">University</label>
@@ -101,12 +129,12 @@
                 <input required id="GitHub" type="radio" name="knowme" value="github">
             </fieldset>
             
-            <div>
-                <label for="Github tag">Let's connect! What is your GitHub tag:</label>
+            <div class="form-item">
+                <label for="Github tag">Let's connect on GitHub!</label>
                 <input id="Github tag" type="text" name="Github tag" placeholder="@gitHub-tag" pattern="/^@[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i">
             </div>
             
-            <div>
+            <div class="form-item">
                 <label for="Question">Ask me anything! (max 180 characters)</label>
                 <textarea required id="Question" name="question" maxlength="180" type="text" rows="8" cols="">
                 </textarea>
@@ -137,6 +165,5 @@
             <p class="item">| Olivia Carroll | 2022 </p>
         </div>
     </footer>
-
 </body>
 </html>
