@@ -2,6 +2,7 @@
     --font-colour: #DAFAED;
     --dark-turquoise: #237CA5;
     --logo-colour: #29ABE4;
+    --text-color: #012535;
 }
 
 *{max-width: 100%;}
@@ -11,6 +12,15 @@ body {
     background-color: var(--dark-turquoise);
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color)
+}
+
+.title {
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    color: var(--text-color);
 }
 
 .card {
@@ -21,60 +31,75 @@ body {
     text-align: center;
     max-width: 1024px;
 }
+
 .link {
     text-decoration: none;
     color: var(--font-colour);
 }
 
 .hero-image {  /*maybe switch to vh and vw and align?? */
-    background-image: url(/multimedia/Picture\ CV.jpg);
-    background-color: var(--logo-colour);
-    height: 500px;
-    max-width: 425px;
+    background-color: hsla(198, 78%, 53%, 0.404);
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.headshot {
+    border-radius: 50%;
+    border: 5px solid var(--font-color);
 }
 
 .hero-text-main {
     text-align: center;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: #DAFAED;
+    margin: 10px 0;
 }
 
-nav.navbar, footer.social-footer {
+nav.navbar, footer.main-footer {
     background-color: var(--logo-colour);
     width: 100%;
 }
 
-.navbar .link {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
     display: none;
 }
 
+.navbar .link {
+    margin: 6px;
+}
+
 .navbar img.logo {
-    width: 15%;
+    width: 30%;
+    max-width: 110px;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.name-footer img.logo {
+    width: 30%;
     max-width: 110px;
 }
 
-footer.social-footer {
-    text-align: center;
-}
+@media screen and (min-width: 576px) {
+    .navlinks {
+        display: flex;
+        justify-content: space-between;
+    }
 
-
-.social-footer .page-name {
-    display: flex;
-}
-
-.social-footer .page-name .block {
-    max-width: 50%;
-}
-
-.social-footer img.logo {
-    align-self: right;
-    width: 15%;
-    max-width: 110px;
+    .navbar .navlinks .link:hover {
+        color: darkgrey;
+        transition: color 0.3s linear;
+    }
 }

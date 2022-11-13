@@ -11,21 +11,26 @@
 </head>
 
 <body>
-    <img src="" alt="">
     <nav class="navbar">
         <a href="#">
             <img class="logo" src="/multimedia/oliviac-low-res-logo-black-on-transparent-background.png" alt="Logo with black open circle and Olivia C in centre"
             title="OliviaC logo">
         </a>
-        <a class="link" href="# AboutMe">About Me</a>
-        <a class="link" href="# skills">Skills</a>
-        <a class="link" href="# contact">Contact</a>
+        <ul class="navlinks">
+            <li><a class="link" href="# AboutMe">About Me</a></li>
+            <li><a class="link" href="# skills">Skills</a></li>
+            <li><a class="link" href="# contact">Contact</a></li>
+        </ul>
     </nav>
 
     <header class="hero-image">
+        <div class="inside-hero-image">
+            <img class="headshot" src="/multimedia/Picture CV.jpg" alt="Portrait of Olivia Carroll">
+        </div>
+
         <div class="hero-text-main">
             <!--have background image, optimised for different resolutions-->
-            <h1 >OLIVIA CARROLL</h1> 
+            <h1 class="h1">OLIVIA CARROLL</h1> 
             <h2 class="main-subheader">Junior Full Stack Developer</h2>
             <a class="link" href="# ContactForm">
                 <button class="ContactMe" type="button">Get in touch</button>
@@ -37,18 +42,20 @@
         <section>
             <h3 class="title" id="AboutMe">About Me</h3>
             <div class="card">
-            <p>
+            <p class="about-content">
                 Hi! I'm Olivia. I'm currently based in Barcelona city centre, studying for a Biomedicine degree and I've just started out on my journey to being a developer.
             </p> 
             </div>
             <div class="card">
-            <p>
+            <p class="about-content">
                 My longterm goal is to create beautifully crafted software and applications that make healthcare accessible to all and take us into the digital era of personalised medicine.
                 For now, I'm learning all of the skills I can to get there!
             </p>
             </div>
         </section>
-        <hr>        
+
+        <hr>     
+        
         <section>
             <h2 class="title" id="skills">Skills</h2>
             <div class="card">
@@ -112,25 +119,22 @@
         </form>
     </main>
 
-    <footer class="social-footer"> 
-        <!-- links to social networks with logos, use target _blank-->
-        <ul>
-            <li>
-                <a class="link" href="https://github.com/OliviaCarroll" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>
-                </a>
-            </li>
-            <li>
-                <a class="link" href="https://www.linkedin.com/in/olivia-carroll-910a55170" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </li>
-        </ul>
-        <div class="page-name">
-            <a class="link block" href="#">
+    <footer class="main-footer"> 
+        <div class="social-footer">
+            <a class="link" href="https://github.com/OliviaCarroll" target="_blank" rel="noopener noreferrer">
+                <i class="link fa-brands fa-github"></i>
+            </a>
+
+            <a class="link" href="https://www.linkedin.com/in/olivia-carroll-910a55170" target="_blank" rel="noopener noreferrer">
+                <i class="link fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="name-footer">
+            <a class="item" href="#">
                 <img class="logo" src="/multimedia/oliviac-low-res-logo-black-on-transparent-background.png" alt="OliviaC logo">
             </a>
-            <p class="block">| Olivia Carroll | 2022 </p>
+            <p class="item">| Olivia Carroll | 2022 </p>
         </div>
     </footer>
 
