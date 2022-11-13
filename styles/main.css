@@ -1,9 +1,80 @@
-:root {
+:root { 
+    --font-colour: #DAFAED;
+    --dark-turquoise: #237CA5;
     --logo-colour: #29ABE4;
-    font-size: 16px;
 }
+
 *{max-width: 100%;}
 
-.logo {
-    max-width: 15px; /* TODO make responsive */
+body {
+    background-image: url(/multimedia/health_science_\ iconic_1302104.jpg);
+    background-color: var(--dark-turquoise);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.726);
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    max-width: 1024px;
+}
+.link {
+    text-decoration: none;
+    color: var(--font-colour);
+}
+
+.hero-image {  /*maybe switch to vh and vw and align?? */
+    background-image: url(/multimedia/Picture\ CV.jpg);
+    background-color: var(--logo-colour);
+    height: 500px;
+    max-width: 425px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text-main {
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #DAFAED;
+}
+
+nav.navbar, footer.social-footer {
+    background-color: var(--logo-colour);
+    width: 100%;
+}
+
+.navbar .link {
+    display: none;
+}
+
+.navbar img.logo {
+    width: 15%;
+    max-width: 110px;
+}
+
+footer.social-footer {
+    text-align: center;
+}
+
+
+.social-footer .page-name {
+    display: flex;
+}
+
+.social-footer .page-name .block {
+    max-width: 50%;
+}
+
+.social-footer img.logo {
+    align-self: right;
+    width: 15%;
+    max-width: 110px;
 }

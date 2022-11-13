@@ -9,98 +9,130 @@
     <script src="https://kit.fontawesome.com/5f2160091e.js" crossorigin="anonymous"></script>
     <title>OliviaCarroll</title>
 </head>
+
 <body>
+    <img src="" alt="">
     <nav class="navbar">
         <a href="#">
             <img class="logo" src="/multimedia/oliviac-low-res-logo-black-on-transparent-background.png" alt="Logo with black open circle and Olivia C in centre"
             title="OliviaC logo">
         </a>
-        <a href="# AboutMe">About Me</a>
+        <a class="link" href="# AboutMe">About Me</a>
+        <a class="link" href="# skills">Skills</a>
+        <a class="link" href="# contact">Contact</a>
     </nav>
-    <header>
+
+    <header class="hero-image">
+        <div class="hero-text-main">
             <!--have background image, optimised for different resolutions-->
-            <figure> 
-                <figcaption></figcaption>
-            </figure>
-            <h1>OLIVIA CARROLL</h1> 
-            <h2>Junior Full Stack Developer</h2>
+            <h1 >OLIVIA CARROLL</h1> 
+            <h2 class="main-subheader">Junior Full Stack Developer</h2>
+            <a class="link" href="# ContactForm">
+                <button class="ContactMe" type="button">Get in touch</button>
+            </a>
+        </div>    
     </header>
+
     <main>
         <section>
-            <h3 id="AboutMe">About Me</h3>
+            <h3 class="title" id="AboutMe">About Me</h3>
+            <div class="card">
             <p>
                 Hi! I'm Olivia. I'm currently based in Barcelona city centre, studying for a Biomedicine degree and I've just started out on my journey to being a developer.
-            </p>    
+            </p> 
+            </div>
+            <div class="card">
             <p>
                 My longterm goal is to create beautifully crafted software and applications that make healthcare accessible to all and take us into the digital era of personalised medicine.
                 For now, I'm learning all of the skills I can to get there!
             </p>
+            </div>
         </section>
         <hr>        
         <section>
-            <h2>Skills</h2>
-            Python
-            R
-            Html 
-            css 
-            Javascript
+            <h2 class="title" id="skills">Skills</h2>
+            <div class="card">
+                Python
+                R
+                html 
+                css 
+                Javascript
+            </div>
         </section> 
         <hr>
-        <h2>Contact Form</h2>
-        <form>
+
+        <h2 class="title" id="ContactForm">Contact Form</h2>
+        <form class="card" action="contact-form.html" method="post">
             <div>
                 <label for="name">Name</label>
-                <input id="name" type="text">
+                <input required id="name" name="name type="text">
             </div>
+            
             <div>
                 <label for="surname">Surname</label>
-                <input id="surname" type="text">
+                <input required id="surname" name="surname" type="text">
             </div>
+            
             <div>
-                <label for="phone">Telephone</label>
-                <input id="phone" type="tel" name="Phone" id="">
+                <label for="phone">Telephone </label>
+                <input required id="phone" name="phone" type="tel" placeholder="000000000" pattern="[0-9]+">
             </div>
-            <div>
-                <label for="question">How did you hear about me?</label>
-                <button>University</button>
-                <button>Keepcoding kick-off</button>
-                <button>College</button>
-                <button>GitHub</button>
-            </div>
+            
+            <fieldset>
+                <legend>How did you hear about me?</legend>
+                
+                <label for="University">University</label>
+                <input required id="University" type="radio" name="knowme" value="uni">
+
+                <label for="Keepcoding kick-off">Keepcoding kick-off</label>
+                <input required id="Keepcoding kick-off" type="radio" name="knowme" value="keepcoding">
+
+                <label for="College/School">College/School</label>
+                <input required id="College/School" type="radio" name="knowme" value="college">
+
+                <label for="GitHub">GitHub</label>
+                <input required id="GitHub" type="radio" name="knowme" value="github">
+            </fieldset>
+            
             <div>
                 <label for="Github tag">Let's connect! What is your GitHub tag:</label>
-                <input type="text">
+                <input id="Github tag" type="text" name="Github tag" placeholder="@gitHub-tag" pattern="/^@[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i">
             </div>
+            
             <div>
-                <label for="Description">Description (max 180 characters)</label>
-                <input type="text" maxlength="180 charac" placeholder="Write your question here">
+                <label for="Question">Ask me anything! (max 180 characters)</label>
+                <textarea required id="Question" name="question" maxlength="180" type="text" rows="8" cols="">
+                </textarea>
             </div>
+            
             <div>
-                <input type="submite" value="Send">
-                <button type="submit">Submit</button>
+                <input required type="submit" value="Send">
             </div>
+
         </form>
     </main>
-    <footer class="footer"> 
+
+    <footer class="social-footer"> 
         <!-- links to social networks with logos, use target _blank-->
         <ul>
             <li>
-                <a href="#">
-                <img class="logo" src="/multimedia/oliviac-low-res-logo-black-on-transparent-background.png" alt="OliviaC logo">
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/OliviaCarroll" target="_blank" rel="noopener noreferrer">
+                <a class="link" href="https://github.com/OliviaCarroll" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github"></i>
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/olivia-carroll-910a55170" target="_blank" rel="noopener noreferrer">
+                <a class="link" href="https://www.linkedin.com/in/olivia-carroll-910a55170" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-linkedin"></i>
                 </a>
             </li>
         </ul>
-        <em>Olivia Carroll</em>
+        <div class="page-name">
+            <a class="link block" href="#">
+                <img class="logo" src="/multimedia/oliviac-low-res-logo-black-on-transparent-background.png" alt="OliviaC logo">
+            </a>
+            <p class="block">| Olivia Carroll | 2022 </p>
+        </div>
     </footer>
+
 </body>
 </html>
