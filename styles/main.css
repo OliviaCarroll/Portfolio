@@ -7,6 +7,10 @@
 
 *{max-width: 100%;}
 
+html , body {
+    min-height: 100%;
+}
+
 body {
     background-image: url(/multimedia/health_science_\ iconic_1302104.jpg);
     background-color: var(--dark-turquoise);
@@ -101,6 +105,15 @@ nav.navbar, footer.main-footer {
     align-items: flex-start;
 }
 
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+
 .name-footer img.logo {
     width: 15%;
     max-width: 110px;
@@ -113,13 +126,17 @@ nav.navbar, footer.main-footer {
     display: flex;
     font-size: 0.8rem;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    max-width: 100%;
 }
 
+
 .social-footer{
-    padding: 5px 5px;
+    padding: 5px 10px;
     text-align: center;
 }
+
 
 @media screen and (min-width: 576px) {
     .navlinks {
@@ -204,7 +221,13 @@ nav.navbar, footer.main-footer {
         align-items: flex-start;
         max-width: 425px;
     }
+}
 
+@media screen and (min-width: 768px){
+    .main-content {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 @keyframes progress5 {

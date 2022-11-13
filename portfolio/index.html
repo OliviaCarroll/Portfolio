@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +14,8 @@
 <body>
     <nav class="navbar">
         <a href="#">
-            <img class="logo" src="/multimedia/oliviac-low-res-logo-black-on-transparent-background.png" alt="Logo with black open circle and Olivia C in centre"
-            title="OliviaC logo">
+            <img class="logo" src="/multimedia/oliviac-low-res-logo-black-on-transparent-background.png"
+                alt="Logo with black open circle and Olivia C in centre" title="OliviaC logo">
         </a>
         <ul class="navlinks">
             <li><a class="link" href="# AboutMe">About Me</a></li>
@@ -30,140 +31,149 @@
 
         <div class="hero-text-main">
             <!--have background image, optimised for different resolutions-->
-            <h1 class="h1">OLIVIA CARROLL</h1> 
+            <h1 class="h1">OLIVIA CARROLL</h1>
             <h2 class="main-subheader">Junior Full Stack Developer</h2>
             <a class="link" href="# ContactForm">
                 <button class="ContactMe" type="button">Get in touch</button>
             </a>
-        </div>    
+        </div>
     </header>
 
     <main class="main-content">
-        <section class="blog-content">
-            <h3 class="title" id="AboutMe">About Me</h3>
-            <div class="card">
-            <p class="about-content">
-                Hi! I'm Olivia. I'm currently based in Barcelona city centre, studying for a Biomedicine degree and I've just started out on my journey to being a developer.
-            </p> 
-            </div>
-            <div class="card">
-            <p class="about-content">
-                My longterm goal is to create beautifully crafted software and applications that make healthcare accessible to all and take us into the digital era of personalised medicine.
-                For now, I'm learning all of the skills I can to get there!
-            </p>
-            </div>
-        </section>
-
-        <hr>     
-        
-        <section class="blog-content">
-            <h2 class="title" id="skills">Skills</h2>
-            <div class="card">
-                <div class="progress-circles">
-                    <div class="circle per-5">
-                        <div class="inner">
-                            Javascript
-                        </div>
-                    </div>
-                    <div class="circle per-5">
-                        <div class="inner">
-                            Typescript
-                        </div>
-                    </div>
-                    <div class="circle per-50">
-                        <div class="inner">
-                            Python
-                        </div>
-                    </div>
-                    <div class="circle per-75">
-                        <div class="inner">
-                            html
-                        </div>
-                    </div>
-                    <div class="circle per-50">
-                        <div class="inner">
-                            css
-                        </div>
-                    </div>
-                    <div class="circle per-25">
-                        <div class="inner">
-                            R
-                        </div>
-                    </div>
+        <div class="main-blog">
+            <section class="blog-content">
+                <h3 class="title" id="AboutMe">About Me</h3>
+                <div class="card">
+                    <p class="about-content">
+                        Hi! I'm Olivia. I'm currently based in Barcelona city centre, studying for a Biomedicine degree
+                        and I've just started out on my journey to being a developer.
+                    </p>
                 </div>
-                
-            </div>
-        </section> 
-        <hr>
+                <div class="card">
+                    <p class="about-content">
+                        My longterm goal is to create beautifully crafted software and applications that make healthcare
+                        accessible to all and take us into the digital era of personalised medicine.
+                        For now, I'm learning all of the skills I can to get there!
+                    </p>
+                </div>
+            </section>
 
-        <h2 class="title" id="ContactForm">Contact Form</h2>
-        <form class="card blog-content contact-form" action="contact-form.html" method="post">
-            <div class="form-item">
-                <label for="name">Name:</label>
-                <input required id="name" name="name type="text">
-            </div>
-            
-            <div class="form-item">
-                <label for="surname">Surname:</label>
-                <input required id="surname" name="surname" type="text">
-            </div>
-            
-            <div class="form-item">
-                <label for="phone">Telephone:</label>
-                <input required id="phone" name="phone" type="tel" placeholder="000000000" pattern="[0-9]+">
-            </div>
-            
-            <fieldset class="form-item">
-                <legend>How did you hear about me?</legend>
-                
-                <label for="University">University</label>
-                <input required id="University" type="radio" name="knowme" value="uni">
+            <hr>
 
-                <label for="Keepcoding kick-off">Keepcoding kick-off</label>
-                <input required id="Keepcoding kick-off" type="radio" name="knowme" value="keepcoding">
+            <section class="blog-content">
+                <h2 class="title" id="skills">Skills</h2>
+                <div class="card">
+                    <div class="progress-circles">
+                        <div class="circle per-5">
+                            <div class="inner">
+                                Javascript
+                            </div>
+                        </div>
+                        <div class="circle per-5">
+                            <div class="inner">
+                                Typescript
+                            </div>
+                        </div>
+                        <div class="circle per-50">
+                            <div class="inner">
+                                Python
+                            </div>
+                        </div>
+                        <div class="circle per-75">
+                            <div class="inner">
+                                html
+                            </div>
+                        </div>
+                        <div class="circle per-50">
+                            <div class="inner">
+                                css
+                            </div>
+                        </div>
+                        <div class="circle per-25">
+                            <div class="inner">
+                                R
+                            </div>
+                        </div>
+                    </div>
 
-                <label for="College/School">College/School</label>
-                <input required id="College/School" type="radio" name="knowme" value="college">
+                </div>
+            </section>
+        </div>
 
-                <label for="GitHub">GitHub</label>
-                <input required id="GitHub" type="radio" name="knowme" value="github">
-            </fieldset>
-            
-            <div class="form-item">
-                <label for="Github tag">Let's connect on GitHub!</label>
-                <input id="Github tag" type="text" name="Github tag" placeholder="@gitHub-tag" pattern="/^@[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i">
-            </div>
-            
-            <div class="form-item">
-                <label for="Question">Ask me anything! (max 180 characters)</label>
-                <textarea required id="Question" name="question" maxlength="180" type="text" rows="8" cols="">
+        <div class="contact-me">
+            <h2 class="title" id="ContactForm">Contact Form</h2>
+            <form class="card contact-form" action="contact-form.html" method="post">
+                <div class="form-item">
+                    <label for="name">Name:</label>
+                    <input required id="name" name="name type=" text">
+                </div>
+
+                <div class="form-item">
+                    <label for="surname">Surname:</label>
+                    <input required id="surname" name="surname" type="text">
+                </div>
+
+                <div class="form-item">
+                    <label for="phone">Telephone:</label>
+                    <input required id="phone" name="phone" type="tel" placeholder="000000000" pattern="[0-9]+">
+                </div>
+
+                <fieldset class="form-item">
+                    <legend>How did you hear about me?</legend>
+
+                    <label for="University">University</label>
+                    <input required id="University" type="radio" name="knowme" value="uni">
+
+                    <label for="Keepcoding kick-off">Keepcoding kick-off</label>
+                    <input required id="Keepcoding kick-off" type="radio" name="knowme" value="keepcoding">
+
+                    <label for="College/School">College/School</label>
+                    <input required id="College/School" type="radio" name="knowme" value="college">
+
+                    <label for="GitHub">GitHub</label>
+                    <input required id="GitHub" type="radio" name="knowme" value="github">
+                </fieldset>
+
+                <div class="form-item">
+                    <label for="Github tag">Let's connect on GitHub!</label>
+                    <input id="Github tag" type="text" name="Github tag" placeholder="@gitHub-tag"
+                        pattern="/^@[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i">
+                </div>
+
+                <div class="form-item">
+                    <label for="Question">Ask me anything! (max 180 characters)</label>
+                    <textarea required id="Question" name="question" maxlength="180" type="text" rows="8" cols="">
                 </textarea>
-            </div>
-            
-            <div>
-                <input required type="submit" value="Send">
-            </div>
+                </div>
 
-        </form>
+                <div>
+                    <input required type="submit" value="Send">
+                </div>
+
+            </form>
+        </div>
     </main>
 
-    <footer class="main-footer"> 
+    <footer class="main-footer">
         <div class="social-footer">
             <a class="link" href="https://github.com/OliviaCarroll" target="_blank" rel="noopener noreferrer">
                 <i class="link fa-brands fa-github"></i>
             </a>
 
-            <a class="link" href="https://www.linkedin.com/in/olivia-carroll-910a55170" target="_blank" rel="noopener noreferrer">
+            <a class="link" href="https://www.linkedin.com/in/olivia-carroll-910a55170" target="_blank"
+                rel="noopener noreferrer">
                 <i class="link fa-brands fa-linkedin"></i>
             </a>
         </div>
 
         <div class="name-footer">
             <a class="item" href="#">
-                <img class="logo" src="/multimedia/oliviac-low-res-logo-black-on-transparent-background.png" alt="OliviaC logo">
+                <img class="logo" src="/multimedia/oliviac-low-res-logo-black-on-transparent-background.png"
+                    alt="OliviaC logo">
             </a>
             <p class="item">| Olivia Carroll | 2022 </p>
         </div>
     </footer>
 </body>
+
 </html>
